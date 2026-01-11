@@ -1,6 +1,4 @@
-g++ source/main.cpp \
-    source/ui/blocks.cpp \
-    source/states/loadingState.cpp \
-    source/states/menuState.cpp \
+g++ source/*.cpp \
+   source/*/*.cpp \
    -I include \
     -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
