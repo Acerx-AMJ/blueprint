@@ -5,7 +5,7 @@
 #include <string>
 
 struct LoadingState: public State {
-   enum class Loading { fonts, textures, shaders, sounds, music, loadingCount };
+   enum class Loading { none = -1, fonts, textures, sounds, music, loadingCount };
 
    // Constructors
 
@@ -21,7 +21,8 @@ struct LoadingState: public State {
    // Members
 
    std::string loadingText;
-   Loading loadingPhase = Loading::fonts;
+   Loading loadingPhase = Loading::none;
+   float finalWaitTimer = 1.0f;
 };
 
 #endif
