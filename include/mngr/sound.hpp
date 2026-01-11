@@ -1,0 +1,23 @@
+#ifndef MNGR_SOUND_HPP
+#define MNGR_SOUND_HPP
+
+#include <raylib.h>
+#include <string>
+#include <vector>
+
+// Load functions
+
+void loadSound(const std::string &name, const std::string &path);
+void loadMusic(const std::string &name, const std::string &path);
+void saveSound(const std::string &name, const std::vector<std::string> &soundList);
+
+void loadSavedSounds();
+void loadSounds();
+void loadMusic();
+
+// Play functions
+
+void playSound(const std::string &name);
+void playMusic(const std::string &name);
+
+#endif
