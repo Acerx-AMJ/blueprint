@@ -11,6 +11,9 @@ Nodes take in input and return some sort of output. They can be connected using 
 - Square connections input/output materials or currency
 - Circular connections input/ouput some measurement, like amount of power or litres of water
 
+### UI
+Loading state fades from black into a screen with the icon and title of the game, a spinning bar and a loading info text. After loading all assets, it morphs into the main menu screen where the same icon and title are now positioned in the top-left corner with buttons below it. Buttons will be navigatable using arrow keys and mouse. The background will be a top-down view of the game and it'll change dynamically based on the selected option.
+
 ### Based off
 - Upload Labs (nodes and connections, style, automation, as well as research)
 - Mindustry (materials and schematics. research too)
